@@ -15,7 +15,7 @@ var middleware={
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthentication,function(req,res){
-	res.send('This is hari reporting from india')
+	res.send('This is hari reporting from india,Sounds cool')
 });
 
 app.use(express.static(__dirname+'/public'));
